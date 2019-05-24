@@ -1,0 +1,155 @@
+body {
+	font-family: lemon milk;
+	 background-image: url(berries-bowl-of-fruit-citrus-1128678.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	font-size:100%;
+	color: #fcfbf9;
+	text-shadow: 0 0 3px #ed0e28;
+}
+#heading{
+	text-align:center;
+	padding: 0;
+	margin-top: 90px;
+}
+
+
+#wire{
+	text-align: center;
+	white-space: nowrap;
+	position: absolute;
+	padding: 0;
+	width: 100%;
+	top:-80px;
+	border-bottom: 3px solid #222;
+	height:100px;
+}
+#wire li{
+	position: relative;
+	list-style:none;
+	margin: 0 22px;
+	padding:0;
+	display:inline-block;
+	width:15px;
+	height:30px;
+	border-radius: 50%;
+	top:102px;
+	background-color: #fff;
+	animation-name: even-flash;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
+}
+@keyframes even-flash{
+	0%, 100%{
+	background:rgba(234,42,32,1);
+	box-shadow:0px 2px 20px 4px rgba(234,42,32,1);}
+    50%{
+    	background: rgba(234,42,32,0.5);
+    	box-shadow:0px 2px 20px 4px rgba(234,42,32,0.3);
+    }
+}
+#basic{
+	font-size: 25px;
+	font-family: nunito sans;
+	text-shadow: 0 0 3px #ed0e28;
+	text-align: left;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+legend{
+	font-size: 100%;
+	font-size: 40px;
+	font-family: lemon milk;
+	text-shadow: 0 0 3px #ed0e28;
+}
+button{
+	font-size: 100%;
+	object-position: center;
+	margin: 8px;
+	background-color:	#fcf955;
+	border-radius: 5px;
+	box-shadow: 3px 3px 0px 0.5px  #fcf955;
+	padding: 1em;
+	display: inline-block;
+
+}
+.t button{
+	font-size: 100%;
+	margin: 8px;
+	background-color:	 #fcf955;
+	border-radius: 5px;
+	box-shadow: 3px 3px 0px 0.5px #fcf955;
+	padding: 1em;
+	display: inline-block;
+}
+#Item{
+	align-content: center;
+}
+
+.inputfood{
+	text-align:center;
+	font-size: 30px;
+	font-family: nunito sans;
+	text-shadow: 0 0 3px #ed0e28;
+	line-height: 3px;
+}
+h1{
+	text-align-last: center;
+	text-transform: capitalize;
+}
+.inputnutrient{
+	text-align:center;
+	font-size: 30px;
+	font-family: nunito sans;
+	text-shadow: 0 0 3px #ed0e28;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	line-height: 3px;
+}
+p{
+	-webkit-appearance:none;
+	-moz-appearance:none;
+    -o-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    display:block;
+    margin:30px 0;
+    padding:10px 50px 10px 10px;
+    background-color:grey;
+    color:white;
+    border-radius:10px 20px;
+    border:2px solid #fff;
+    width:280px; 
+    font-size: 100%;
+}
+input[type=text] {
+  width: 50%;
+  padding: 4px 8px;
+  margin: 8px 0;
+  box-sizing:content-box;
+  border-radius: 4px;
+  font-size: 100%;
+}
+select{
+	-webkit-appearance:none;
+	-moz-appearance:none;
+    -o-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    display:block;
+    border-radius:10px;
+    margin:5px 0;
+    font-size: 100%;
+}
+.inputnutrient input[type="number"]{
+  width: 30%;
+  padding: 4px 8px;
+  margin: 8px 0;
+  box-sizing:content-box;
+  border-radius: 4px;
+  font-size: 100%;
+}
+
