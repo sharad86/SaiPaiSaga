@@ -58,7 +58,7 @@ if(name != "" && height != "" && weight != "" && age != "" && gender != "")
  function display()
  {
     
-    var row=1;   
+      
     
     
         
@@ -85,46 +85,6 @@ if(name != "" && height != "" && weight != "" && age != "" && gender != "")
         var finalcal=carbs+fats+prot;
         cal= cal +finalcal;
        
-        var display = document.getElementById("display");
-        var newRow = display.insertRow(row);
-        
-        
-        
-        var cell1 = newRow.insertCell(0);
-        var cell2 = newRow.insertCell(1);
-        var cell3 = newRow.insertCell(2);
-        var cell4 = newRow.insertCell(3);
-        var cell5 = newRow.insertCell(4);
-        
-        cell1.innerHTML = food;
-        cell2.innerHTML = carbs;
-        cell3.innerHTML = fats;
-        cell4.innerHTML = prot;
-        cell5.innerHTML = cal1;
-        
-        row++;     
-        
-         
-         
-       Result();
-          }
-         
-        
-          
-       else{
-        alert("Enter Personal Details First");
-       }
-       }
- }
- 
- function Result(){
-    var display = document.getElementById("divDisplay");
-    if(calorie-cal>=0){
-    display.innerHTML = name+ " has consumed '"+ cal+ "' Calories today.<br/>Remaining Calorie Intake '" + (calorie-cal).toFixed(2) +"'";
-    }
-    else{
-      display.innerHTML = "Maximum Intake Level Reached for Today";
-    }
-}
+        }}}
         
         

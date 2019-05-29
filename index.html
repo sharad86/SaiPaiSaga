@@ -56,30 +56,31 @@
 <div id="Item">
 	<h1>Add More Food Items, Bon Appetite!XD</h1>
 </div>
+<table class="sample" >
+	<tr>
     <div class="inputfood">
-	    	<label for="Food">Food</label>
-	    <input type="text" name="food" id="food" placeholder="enter the food you consumed"><br>
-    </div>
-    <div class="inputnutrient">
-	    <label for="carbs">Carbs(in g):</label>
-	    <input type="number" name="carbs" id="carbs" placeholder="amt. of carbs"><br>
-    </div>
-    <div class="inputnutrient">
-	    <label for="fats">Fats(in g)</label>
-	    <input type="number" name="Fats" id="fats" placeholder="amt. of fat"><br>
-    </div>
-    <div class="inputnutrient">
-	    <label for="Proteins">Proteins(in g)</label>
-	    <input type="number" name="Proteins" id="proteins" placeholder="amt. of Proteins"><br>
-    </div>
+	    	<td><label for="Food">Food</label></td>
+	    <td><input type="text" name="food" id="food" placeholder="enter the food you consumed"><br></td>
+    </div></tr>
+    <tr><div class="inputnutrient">
+	    <td><label for="carbs">Carbs(g):</label></td>
+	    <td><input type="number" name="carbs" id="carbs" placeholder="amt. of carbs"><br></td>
+    </div></tr>
+    <tr><div class="inputnutrient">
+	    <td><label for="fats">Fats(in g)</label></td>
+	    <td><input type="number" name="Fats" id="fats" placeholder="amt. of fat"><br></td>
+    </div></tr>
+    <tr><div class="inputnutrient">
+	    <td><label for="Proteins">Proteins(g)</label></td>
+	    <td><input type="number" name="Proteins" id="proteins" placeholder="amt. of Proteins"><br></td>
+    </div></tr></table>
     <div class="t" style="text-align:center;">
-		    <button type="button" id="Calculate Calorie">Submit</button>
+		    <button type="button" id="Calculate Calorie"onclick="display();>Submit</button>
 		    
-		    <button type="button" id = "addMoreFood"onclick="displayDetails();">Add Item</button>
+		    <button type="button" id = "addMoreFood">Add Item</button>
 		    <span class="cl"><button type="button" id="clear">Clear</button></span>
     </div>
- </div>
- <div class="shadowbox"id="divDisplay" align="right;"></div>
+
  <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

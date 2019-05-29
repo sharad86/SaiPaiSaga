@@ -100,15 +100,7 @@ h1{
 	text-align-last: center;
 	text-transform: capitalize;
 }
-.inputnutrient{
-	text-align:center;
-	font-size: 30px;
-	font-family: nunito sans;
-	text-shadow: 0 0 3px #ed0e28;
-	margin-top: 50px;
-	margin-bottom: 20px;
-	line-height: 3px;
-}
+
 p{
 	-webkit-appearance:none;
 	-moz-appearance:none;
@@ -133,7 +125,17 @@ input[type=text] {
   border-radius: 4px;
   font-size: 100%;
 }
-select{
+
+  .inputnutrient{
+	text-align:center;
+	font-size: 30px;
+	font-family: nunito sans;
+	text-shadow: 0 0 3px #ed0e28;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	line-height: 3px;
+}
+  select{
 	-webkit-appearance:none;
 	-moz-appearance:none;
     -o-appearance:none;
@@ -144,12 +146,52 @@ select{
     margin:5px 0;
     font-size: 100%;
 }
-.inputnutrient input[type="number"]{
+  .inputnutrient input[type="number"]{
   width: 30%;
   padding: 4px 8px;
   margin: 8px 0;
   box-sizing:content-box;
   border-radius: 4px;
-  font-size: 100%;
+  font-size: 30px;
 }
+table.sample {
+    margin-left:auto; 
+    margin-right:auto;
+    width: 30%;
+  padding: 4px 8px;
+  box-sizing:content-box;
+  border-radius: 4px;
+  font-size:30px;
+  	font-family: nunito sans;
+	text-shadow: 0 0 3px #ed0e28;
+	line-height: 4px;
+	letter-spacing: 2px;
 
+  }
+  #carbs{
+  	font-size:30px;
+  	border-radius: 4px;
+  	width: 50%;
+  	padding: 4px 8px;
+  	font-family: nunito sans;
+	text-shadow: 0 0 3px #ed0e28;
+	line-height: 3px;
+  }
+  #fats{
+  	font-size:30px;
+  	border-radius: 4px;
+  	width: 50%;
+  	padding: 4px 8px;
+  	font-family: nunito sans;
+	text-shadow: 0 0 3px #ed0e28;
+	line-height: 3px;
+  }
+  #proteins{
+  	font-size:30px;
+  	border-radius: 4px;
+  	width: 50%;
+  	padding: 4px 8px;
+  	font-family: nunito sans;
+	text-shadow: 0 0 3px #ed0e28;
+	line-height: 3px;
+  }
