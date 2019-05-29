@@ -32,11 +32,11 @@
 <fieldset>
 	<legend><strong>Calorie Track</strong></legend>
 <div id="basic">
-		<p>Name:<input type="text" name="Enter Name"></p>
-		<p>Height:<input type="text" placeholder="0000"><select><option><b>Feet</b></option><option><b>cm</b></option></select></p>
-		<p>Weight:<input type="text" placeholder="0000"><select><option><b>KG</b></option><option><b>Pound</b></option></select></p>
-		<p>Age:<input type="text" placeholder="Years"></p>
-		<p>Gender:<input type="radio" name="sex"><b>Male</b><input type="radio" name="sex"><b>Female</b></p>
+		<p>Name:<input type="text" name="Enter Name"id="name"></p>
+		<p>Height:<input type="text" placeholder="0000"id ="height"><select><option><b>cm</b></option><option><b>feet</b></option></select></p>
+		<p>Weight:<input type="text" placeholder="0000"id="weight"><select><option><b>KG</b></option><option><b>Pound</b></option></select></p>
+		<p>Age:<input type="text" placeholder="Years" id="age"></p>
+		<p>Gender:<input type="radio" name="sex"id="gender1"><b>Male</b><input type="radio" name="sex" id="gender2"><b>Female</b></p>
 		<label for="active">Activity Level:</label>
 		<select id:"active">
 			<option><b>No Exercise</b></option>
@@ -46,10 +46,11 @@
 				<b>Heavy exercise</b>
 			</option>
 		</select>
-		<p>Calorie:<input type="text" placeholder="0000" readonly></p>
+		<p id="calorie">Calorie:<input type="text" placeholder="0000" readonly id="cal"></p>
 		<p>Water Intake:<input type="text" placeholder="In Litres"></p>
-		<button>Calculate</button>
+		<button id="submit"onclick="CalCalculate();">Calculate</button>
 		<button>Reset</button>
+		
 </div>
 </fieldset>
 <div id="Item">
@@ -65,18 +66,20 @@
     </div>
     <div class="inputnutrient">
 	    <label for="fats">Fats(in g)</label>
-	    <input type="number" name="Fats" id="Fats" placeholder="amt. of fat"><br>
+	    <input type="number" name="Fats" id="fats" placeholder="amt. of fat"><br>
     </div>
     <div class="inputnutrient">
 	    <label for="Proteins">Proteins(in g)</label>
-	    <input type="number" name="Proteins" id="Proteins" placeholder="amt. of Proteins"><br>
+	    <input type="number" name="Proteins" id="proteins" placeholder="amt. of Proteins"><br>
     </div>
     <div class="t" style="text-align:center;">
 		    <button type="button" id="Calculate Calorie">Submit</button>
 		    
-		    <button type="button" id = "addMoreFood">Add Item</button>
+		    <button type="button" id = "addMoreFood"onclick="displayDetails();">Add Item</button>
 		    <span class="cl"><button type="button" id="clear">Clear</button></span>
     </div>
  </div>
+ <div class="shadowbox"id="divDisplay" align="right;"></div>
+ <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
